@@ -1,13 +1,25 @@
 import "./styles.css";
-import { homePageContent } from "./home.js";
+import { HomePageContent } from "./home.js";
+import { MenuContent } from "./menu.js";
 
 function generateHomePage() {
-    homePageContent.generateTitle();
-    homePageContent.generateInfo();
-    homePageContent.generateHours();
-    homePageContent.generateLocation();
+    HomePageContent.generateTitle();
+    HomePageContent.generateInfo();
+    HomePageContent.generateHours();
+    HomePageContent.generateLocation();
 }
 
-generateHomePage();
+function generateMenuPage() {
+    MenuContent.generateMenuTitle();
+    MenuContent.generateStarters();
+    MenuContent.generatePizzas();
+    MenuContent.generateSides();
+    MenuContent.generateDesserts();
+    MenuContent.generateDrinks();
+}
+
+// generateHomePage();
+generateMenuPage();
+
 
 console.log("Hi");

@@ -1,5 +1,5 @@
 
-const homePageContent = (function () {
+const HomePageContent = (function () {
     const content = document.getElementById("content");
 
     const generateTitle = () => {
@@ -72,4 +72,4 @@ const homePageContent = (function () {
     }
 })();
 
-export { homePageContent };
+export { HomePageContent };

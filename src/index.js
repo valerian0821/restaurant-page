@@ -1,6 +1,7 @@
 import "./styles.css";
 import { HomePageContent } from "./home.js";
 import { MenuContent } from "./menu.js";
+import { ContactContent } from "./contact.js";
 
 function generateHomePage() {
     HomePageContent.generateTitle();
@@ -18,8 +19,15 @@ function generateMenuPage() {
     MenuContent.generateDrinks();
 }
 
-// generateHomePage();
-generateMenuPage();
+function generateContactPage() {
+    ContactContent.generateContactTitle();
+    ContactContent.generatefirstContact();
+    ContactContent.generateSecondContact();
+    ContactContent.generateThirdContact();
+}
 
+// generateHomePage();
+// generateMenuPage();
+generateContactPage();
 
 console.log("Hi");

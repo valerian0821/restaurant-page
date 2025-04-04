@@ -13,6 +13,7 @@ const ContactContent = (function () {
 
     const generatefirstContact = () => {
         const firstContactDiv = document.createElement("div");
+        firstContactDiv.classList.add("contact");
         content.appendChild(firstContactDiv);
 
         const firstContactName = document.createElement("h3");
@@ -38,6 +39,7 @@ const ContactContent = (function () {
 
         const secondContactName = document.createElement("h3");
         secondContactName.textContent = "Luigi";
+        secondContactDiv.classList.add("contact");
         secondContactDiv.appendChild(secondContactName);
 
         const secondContactRole = document.createElement("p");
@@ -59,6 +61,7 @@ const ContactContent = (function () {
 
         const thirdContactName = document.createElement("h3");
         thirdContactName.textContent = "Wario";
+        thirdContactDiv.classList.add("contact");
         thirdContactDiv.appendChild(thirdContactName);
 
         const thirdContactRole = document.createElement("p");

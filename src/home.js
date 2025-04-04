@@ -4,6 +4,7 @@ const HomePageContent = (function () {
 
     const generateTitle = () => {
         const titleDiv = document.createElement("div");
+        titleDiv.classList.add("flex-center");
         content.appendChild(titleDiv);
 
         const title = document.createElement("h1");
@@ -13,6 +14,7 @@ const HomePageContent = (function () {
 
     const generateInfo = () => {
         const infoDiv = document.createElement("div");
+        infoDiv.id = "info-div";
         content.appendChild(infoDiv);
 
         const info = document.createElement("p");
@@ -21,7 +23,8 @@ const HomePageContent = (function () {
             something a little more daring—like our Spicy Honey Pepperoni—Inferno brings the heat with every bite.`;
 
         const slogan = document.createElement("p");
-        slogan.textContent = "Where Every Slice Is Fire!";
+        slogan.id = "slogan";
+        slogan.textContent = "'Where Every Slice Is Fire!'";
 
         infoDiv.appendChild(info);
         infoDiv.appendChild(slogan);
@@ -33,6 +36,7 @@ const HomePageContent = (function () {
 
         const hours = document.createElement("h2");
         hours.textContent = "Hours";
+        hoursDiv.id = "hours-div";
         hoursDiv.appendChild(hours);
 
         const monday = document.createElement("p");
@@ -62,6 +66,7 @@ const HomePageContent = (function () {
 
     const generateLocation = () => {
         const locationDiv = document.createElement("div");
+        locationDiv.id = "location-div";
         content.appendChild(locationDiv);
 
         const locationHeader = document.createElement("h2");

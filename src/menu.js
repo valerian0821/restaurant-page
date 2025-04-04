@@ -17,6 +17,7 @@ const MenuContent = (function () {
 
         const starters = document.createElement("h2");
         starters.textContent = "Starters";
+        startersDiv.classList.add("menu");
         startersDiv.appendChild(starters);
 
         const startersItem1 = document.createElement("h3");
@@ -48,6 +49,7 @@ const MenuContent = (function () {
 
         const pizzas = document.createElement("h2");
         pizzas.textContent = "Pizzas";
+        pizzaDiv.classList.add("menu");
         pizzaDiv.appendChild(pizzas);
 
         const pizza1 = document.createElement("h3");
@@ -93,6 +95,7 @@ const MenuContent = (function () {
 
         const sides = document.createElement("h2");
         sides.textContent = "Sides";
+        sidesDiv.classList.add("menu");
         sidesDiv.appendChild(sides);
 
         const sides1 = document.createElement("h3");
@@ -124,6 +127,7 @@ const MenuContent = (function () {
 
         const desserts = document.createElement("h2");
         desserts.textContent = "Desserts";
+        dessertsDiv.classList.add("menu");
         dessertsDiv.appendChild(desserts);
 
         const desserts1 = document.createElement("h3");
@@ -148,6 +152,7 @@ const MenuContent = (function () {
 
         const drinks = document.createElement("h2");
         drinks.textContent = "Drinks";
+        drinksDiv.classList.add("menu");
         drinksDiv.appendChild(drinks);
 
         const drinks1 = document.createElement("h3");

@@ -123,7 +123,7 @@ const MenuContent = (function () {
         content.appendChild(dessertsDiv);
 
         const desserts = document.createElement("h2");
-        desserts.textContent = "Sides";
+        desserts.textContent = "Desserts";
         dessertsDiv.appendChild(desserts);
 
         const desserts1 = document.createElement("h3");
@@ -147,7 +147,7 @@ const MenuContent = (function () {
         content.appendChild(drinksDiv);
 
         const drinks = document.createElement("h2");
-        drinks.textContent = "Sides";
+        drinks.textContent = "Drinks";
         drinksDiv.appendChild(drinks);
 
         const drinks1 = document.createElement("h3");

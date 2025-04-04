@@ -43,15 +43,21 @@ const HomePageContent = (function () {
         const saturday = document.createElement("p");
         const sunday = document.createElement("p");
 
-        monday.textContent = ("11:00AM - 10:00PM");
-        tuesday.textContent = ("11:00AM - 10:00PM");
-        wednesday.textContent = ("11:00AM - 10:00PM");
-        thursday.textContent = ("11:00AM - 11:00AM");
-        friday.textContent = ("11:00AM - 12:00AM");
-        saturday.textContent = ("12:00PM - 12:00AM");
-        sunday.textContent = ("12:00PM - 9:00AM");
+        monday.textContent = ("Monday: 11:00AM - 10:00PM");
+        tuesday.textContent = ("Tueday: 11:00AM - 10:00PM");
+        wednesday.textContent = ("Wednesday: 11:00AM - 10:00PM");
+        thursday.textContent = ("Thursday: 11:00AM - 11:00AM");
+        friday.textContent = ("Friday: 11:00AM - 12:00AM");
+        saturday.textContent = ("Saturday: 12:00PM - 12:00AM");
+        sunday.textContent = ("Sunday: 12:00PM - 9:00AM");
 
-        hoursDiv.appendChild(monday, tuesday, wednesday, thursday, friday, saturday, sunday);
+        hoursDiv.appendChild(monday);
+        hoursDiv.appendChild(tuesday);
+        hoursDiv.appendChild(wednesday);
+        hoursDiv.appendChild(thursday);
+        hoursDiv.appendChild(friday);
+        hoursDiv.appendChild(saturday);
+        hoursDiv.appendChild(sunday);
     }
 
     const generateLocation = () => {

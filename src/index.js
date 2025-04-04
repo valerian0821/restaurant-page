@@ -26,8 +26,24 @@ function generateContactPage() {
     ContactContent.generateThirdContact();
 }
 
-// generateHomePage();
-// generateMenuPage();
-generateContactPage();
+function activateNavBar() {
+    const nav = document.querySelector("nav");
+    nav.addEventListener("click", handleNavListener);
+}
 
-console.log("Hi");
+function handleNavListener(event) {
+    content.textContent = "";
+    if (event.target.id === "home") {
+        generateHomePage();
+    } else if (event.target.id === "menu") {
+        generateMenuPage();
+    } else {
+        generateContactPage();
+    }
+}
+
+const content = document.getElementById("content");
+generateHomePage();
+activateNavBar();
+// generateMenuPage();
+// generateContactPage();

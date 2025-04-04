@@ -32,18 +32,18 @@ function activateNavBar() {
 }
 
 function handleNavListener(event) {
-    content.textContent = "";
-    if (event.target.id === "home") {
-        generateHomePage();
-    } else if (event.target.id === "menu") {
-        generateMenuPage();
-    } else {
-        generateContactPage();
+    if (event.target.classList.contains("nav-btn")) {
+        content.textContent = "";
+        if (event.target.id === "home") {
+            generateHomePage();
+        } else if (event.target.id === "menu") {
+            generateMenuPage();
+        } else {
+            generateContactPage();
+        } 
     }
 }
 
 const content = document.getElementById("content");
 generateHomePage();
 activateNavBar();
-// generateMenuPage();
-// generateContactPage();

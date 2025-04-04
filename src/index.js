@@ -27,13 +27,14 @@ function generateContactPage() {
 }
 
 function activateNavBar() {
-    const nav = document.querySelector("nav");
     nav.addEventListener("click", handleNavListener);
 }
 
 function handleNavListener(event) {
     if (event.target.classList.contains("nav-btn")) {
+        toggleBtns();
         content.textContent = "";
+        event.target.classList.toggle("active", true);
         if (event.target.id === "home") {
             generateHomePage();
         } else if (event.target.id === "menu") {
@@ -44,6 +45,20 @@ function handleNavListener(event) {
     }
 }
 
+function toggleBtns() {
+    const btns = nav.children;
+    for (let i = 0; i < btns.length; i++) {
+        btns[i].classList.toggle("active", false);
+    }
+}
+
+function initializePage() { 
+    generateHomePage();
+    const homeBtn = document.getElementById("home");
+    homeBtn.classList.toggle("active", true);
+    activateNavBar();
+}
+
 const content = document.getElementById("content");
-generateHomePage();
-activateNavBar();
+const nav = document.querySelector("nav"); 
+initializePage();

@@ -58,6 +58,10 @@ h3 {
     align-items: center;
 }
 
+.active {
+    font-weight: bold;
+}
+
 .menu > p {
     margin-left: 20px;
     margin-bottom: 20px;
